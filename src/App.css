@@ -48,7 +48,8 @@ form button {
 label {
   margin-bottom: 8px;
 }
-input, select {
+input,
+select {
   margin-bottom: 12px;
   padding: 5px 10px;
   border: none;
@@ -98,7 +99,7 @@ button {
 .tasks button {
   background-color: #f3aa4e;
   border: none;
-  color:  #323f4b;
+  color: #323f4b;
   font-weight: bold;
 }
 .active {
@@ -114,4 +115,9 @@ button {
   align-items: center;
   width: 100%;
   height: 100%;
+}
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  background-color: #131213;
 }
