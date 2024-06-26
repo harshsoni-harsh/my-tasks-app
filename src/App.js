@@ -58,7 +58,7 @@ class App extends Component {
 
   changeFilter = e => {
     this.setState(prev =>
-      prev.filterTag === '' ? {filterTag: e.target.value} : {filterTag: ''},
+      prev.filterTag !== e.target.value ? {filterTag: e.target.value} : {filterTag: ''},
     )
   }
 
