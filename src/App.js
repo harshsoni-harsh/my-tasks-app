@@ -122,7 +122,7 @@ class App extends Component {
                 .map(task => (
                   <li className="taskItem" id={task.id} key={task.id}>
                     <p>{task.text}</p>
-                    <button type="button">{task.tag}</button>
+                    <p className='tag'>{tagsList.find(o => o.optionId === task.tag).displayText}</p>
                   </li>
                 ))}
             </ul>
